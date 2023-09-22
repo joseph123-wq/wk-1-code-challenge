@@ -1,4 +1,8 @@
-let grade = prompt("Please enter your grade");
+"use strict";
+const ps = require("prompt-sync");
+const prompt = ps();
+
+let grade = prompt("Enter your grade:")
 
 
 if(grade>=0 && grade<40){
