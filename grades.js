@@ -1,25 +1,26 @@
+// This first part asks user to input their marks.
 "use strict";
 const ps = require("prompt-sync");
 const prompt = ps();
 
-let grade = prompt("Enter your grade:")
+let marks = prompt("Enter your marks:")
 
-
-if(grade>=0 && grade<40){
+// This part checks the marks and assigns the student their grade.
+if(marks>=0 && marks<40){
     console.log("F")
   }
-  else if(grade>=40 && grade < 50){
+  else if(marks>=40 && marks < 50){
     console.log("D")
   }
-  else if(grade>=50 && grade < 60){
+  else if(marks>=50 && marks < 60){
     console.log("C")
   }
-  else if( grade>=60 && grade < 80){
+  else if( marks>=60 && marks < 80){
     console.log("B")
   }
-  else if( grade>=80 && grade <=100){ 
+  else if( marks>=80 && marks <=100){ 
     console.log("A")
   }
   else{
-    console.log("ERROR! INVALID GRADE!")
+    console.log("ERROR! INVALID MARKS!")
   }
